@@ -14,10 +14,17 @@ public class MainActivity extends AppCompatActivity {
     EditText edit2;
 
     TextView textresultado;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //RECIBE EL PARAMETRO DEL OTRO INTEN
+        Bundle datos = getIntent().getExtras();
+        textresultado.setText(datos.getString("valor"));
         //COMENTARIO PARA PROBAR MI COMMITE AL CMABIO EN GITHUB
 
 
