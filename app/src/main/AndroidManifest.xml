@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmpresaActivity"></activity>
+        <activity android:name=".Adaptadores01Detalle"></activity>
+        <activity android:name=".Adaptadores01">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EmpresaActivity" />
         <activity android:name=".PaisActivity" />
         <activity android:name=".ListView03">
             <intent-filter>
