@@ -3,4 +3,7 @@
     <string name="app_name2">Panyalla 2 Buscador</string>
     <string name="app_primero">Galeria de Imagenes</string>
     <string name="app_segundo">Detalle de Imagen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
