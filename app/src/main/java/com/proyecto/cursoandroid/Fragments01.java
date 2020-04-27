@@ -12,6 +12,7 @@ public class Fragments01 extends AppCompatActivity {
 
     Button btnuno;
     Button btndos;
+    Button btntres;
     LinearLayout contenedor;
 
     @Override
@@ -21,6 +22,7 @@ public class Fragments01 extends AppCompatActivity {
 
         btnuno = findViewById(R.id.btn1);
         btndos = findViewById(R.id.btn2);
+        btntres = findViewById(R.id.btn3);
         contenedor = findViewById(R.id.layutContenedor);
 
         //HANDLER
@@ -39,6 +41,15 @@ public class Fragments01 extends AppCompatActivity {
                 Fragment01Interfaz2 fragmento2 = new Fragment01Interfaz2();
                 FragmentManager manager = getSupportFragmentManager();
                 manager.beginTransaction().replace(R.id.layutContenedor,fragmento2).commit();
+            }
+        });
+
+        btntres.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment01Interfaz3 fragmento3 = new Fragment01Interfaz3();
+                FragmentManager manager = getSupportFragmentManager();
+                manager.beginTransaction().replace(R.id.layutContenedor,fragmento3).commit();
             }
         });
     }
