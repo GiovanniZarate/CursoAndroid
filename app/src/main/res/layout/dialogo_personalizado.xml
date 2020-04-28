@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorPersonalizado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/fotocarnet"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='El gobierno de EEUU aseguró que “no hay ninguna razón para creer" en las cifras del régimen de Maduro sobre el coronavirus'
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="El Departamento de Estado indicó que no sorprendería que la dictadura chavista esté publicando datos falsos sobre las muertes y contagios de Covid-19 en Venezuela"
+            android:textColor="@color/design_default_color_error" />
+    </LinearLayout>
+</FrameLayout>
